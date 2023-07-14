@@ -10,21 +10,16 @@ int main(void)
 {
 	int n, m;
 
-	for (n = 0; n < 9; n++)
+	for (n = 0; n < 90; n++)
 	{
-		for (m = n + 1; n < 10; m++)
+		for (m = n + 1; m < 10; m++)
 		{
-			if (m != n)
-			{
-				putchar((n % 10) + '0');
-				putchar((m % 10) + '0');
-				if (n == 8 && m == 9)
-					continue;
-				{
+			putchar((n % 10) + '0');
+			putchar((m % 10) + '0');
+			if (n == 90 && m == 89)
+				continue;
 				putchar(',');
 				putchar(' ');
-				}
-			}
 		}
 	}
 	putchar('\n');
