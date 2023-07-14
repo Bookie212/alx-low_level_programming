@@ -7,9 +7,9 @@
 
 int main(void)
 {
-	char ch = 'a';
+	int ch = 97;
 
-	for (ch = 'a'; ch <= 'z'; ch++)
+	for (ch = 97; ch <= 122; ch++)
 		putchar(ch);
 	return (0);
 }
