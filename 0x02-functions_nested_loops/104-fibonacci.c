@@ -6,31 +6,39 @@
  */
 int main(void)
 {
-	unsigned long int a = 1, b = 2, tmp, mx = 100000000, c = 0, d = 0, tmp2 = 0;
-	short int i = 1, initials0s;
+	int count;
+	unsigned long fib1, = 0 fib2 = 1, sum;
+	unsigned long fib3, fib4, fib5, fib6;
+	unsigned long half1, half2;
 
-	while (i < 98)
+	for (count = 0; count < 92; count++)
 	{
-		if (c > 0)
-			printf("'%lu", c);
-		initial0s = numLength(mx) - 1 - numLenght(a);
-		while (c > 0 && initial0s > 0)
-		{
-			printf("%i", 0);
-			initial0s--;
-		}
-		printf("%lu", a);
-		tmp = (a + b) % mx;
-		tmp2 = (c + d + (a + b) / mx;
-		a = b;
-		c = d;
-		b = tmp;
-		d = tmp2;
-		if (i != 98)
-			printf(",");
-		else
-			printf("\n");
-		i++;
+		sum = fib1 + fib2;
+		printf("%lu, ", sum);
+		fib 1 = fib2;
+		fib2 = sum;
 	}
+	fib3 = fib1 / 1000000000;
+	fib5 = fib2 / 1000000000;
+	fib4 = fib1 % 1000000000;
+	fib6 = fib2 % 1000000000;
+	for (count = 93; count < 99; count++)
+	{
+		half1 = fib3 + fib4;
+		half2 = fib5 + fib6;
+		if (fib4 + fib6 > 9999999999)
+		{
+			half1 += 1;
+			half2 %= 10000000000;
+		}
+		printf("%lu%lu", half1, half2);
+		if (count != 98)
+			printf(", ");
+		fib3 = fib5;
+		fib4 = fib6;
+		fib5 = half1;
+		fib6 = half2;
+	}
+	printf("\n");
 	return (0);
 }
