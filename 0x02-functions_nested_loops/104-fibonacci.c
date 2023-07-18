@@ -7,7 +7,7 @@
 int main(void)
 {
 	int count;
-	unsigned long fib1, = 0 fib2 = 1, sum;
+	unsigned long fib1 = 0, fib2 = 1, sum;
 	unsigned long fib3, fib4, fib5, fib6;
 	unsigned long half1, half2;
 
@@ -15,7 +15,7 @@ int main(void)
 	{
 		sum = fib1 + fib2;
 		printf("%lu, ", sum);
-		fib 1 = fib2;
+		fib1 = fib2;
 		fib2 = sum;
 	}
 	fib3 = fib1 / 1000000000;
