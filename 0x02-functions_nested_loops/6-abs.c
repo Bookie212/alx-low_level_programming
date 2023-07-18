@@ -2,7 +2,7 @@
 /**
  * _abs- Computes the absolutvalue of an integer
  *
- * int - Input number as an integer
+ * @i: Input number as an integer
  *
  * Return: Absolute value
  */
