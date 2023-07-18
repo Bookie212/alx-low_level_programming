@@ -6,19 +6,31 @@
  */
 int main(void)
 {
-	int i = 0;
-	unsigned long int a = 0, b = 1, next = 0;
+	unsigned long int a = 1, b = 2, tmp, mx = 100000000, c = 0, d = 0, tmp2 = 0;
+	short int i = 1, initials0s;
 
 	while (i < 98)
 	{
-		next = a + b;
+		if (c > 0)
+			printf("'%lu", c);
+		initial0s = numLength(mx) - 1 - numLenght(a);
+		while (c > 0 && initial0s > 0)
+		{
+			printf("%i", 0);
+			initial0s--;
+		}
+		printf("%lu", a);
+		tmp = (a + b) % mx;
+		tmp2 = (c + d + (a + b) / mx;
 		a = b;
-		b = next;
-		printf("%lu", next);
-		if (i < 97)
-			printf(", ");
+		c = d;
+		b = tmp;
+		d = tmp2;
+		if (i != 98)
+			printf(",");
+		else
+			printf("\n");
 		i++;
 	}
-	putchar('\n');
 	return (0);
 }
