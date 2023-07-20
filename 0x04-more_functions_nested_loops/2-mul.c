@@ -8,10 +8,5 @@
 
 int mul(int a, int b)
 {
-	int c;
-
-	c = a * b;
-
-	_putchar("%d\n", c);
-	return (0);
+	return (a * b);
 }
