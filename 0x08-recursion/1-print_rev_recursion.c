@@ -7,7 +7,7 @@
 
 void _print_rev_recursion(char *s)
 {
-	if (s == "")
-		return ("");
-	return ((s(1)) + (s(0)));
+	if (*s == " ")
+		return (1);
+	return (0);
 }
