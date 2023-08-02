@@ -2,6 +2,7 @@
 /**
  * _sqrt_recursion - returns the square root of n
  * @n: floating point value
+ * @i: iterator
  * Return: Always 0
  */
 int actual_sqrt_recursion(int n, int i);
